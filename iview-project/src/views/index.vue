@@ -65,6 +65,7 @@ a:active,a:hover{
     background-color: #ecf0f1;
 }
 .publication-back{
+    padding-bottom: 70px;
     background-color: #27ae60;
 }
 .project-back{
@@ -79,7 +80,7 @@ a:active,a:hover{
     text-align: center;
 }
 .font1{
-    padding: 320px 0 48px;
+    padding: 170px 0 3px;
     font: bold 86px "Raleway";
     color:#ecf0f1;
 }
@@ -91,7 +92,7 @@ a:active,a:hover{
     width:1140px;
     height:580px;
     position:absolute;
-    bottom: -380px;
+    bottom: -230px;
     padding:70px 0;
     background-color: #ffffff;
     border-bottom: 2px solid #d0d4d4;
@@ -99,7 +100,11 @@ a:active,a:hover{
     border-radius: 3px;
     color:#2c3e50;
 }
+.font-title-about{
+    font: normal 40px "Raleway";
+}
 .font-title{
+    padding-top: 100px;
     font: normal 40px "Raleway";
 }
 .font-subtitle{
@@ -111,15 +116,16 @@ a:active,a:hover{
 }
 .home-details h3{
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .home-details p{
     width: 770px;
+    height: 160px;
     margin: 10px auto;
 }
 .group-people{
-    margin-top: 470px;
+    margin-top: 220px;
 }
 .title-a{
     text-align: center;
@@ -128,6 +134,13 @@ a:active,a:hover{
 .title-b{
     text-align: center;
     color:#ffffff;
+}
+.detail-button{
+    width:280px;
+    height:75px;
+    margin: 65px 0 0 -140px;
+    position: absolute;
+    left: 50%;
 }
 .people-details{
     margin-bottom: 100px;
@@ -152,6 +165,7 @@ a:active,a:hover{
     justify-content: center;
 }
 .contact-font{
+    margin-bottom: 50px;
     color:#2c3e50;
     font: 18px "Raleway";
 }
@@ -165,6 +179,7 @@ a:active,a:hover{
     color:#eeeeee;
 }
 footer{
+    margin-bottom: 70px;
     text-align: center;
     color:#2c3e50;
     font: 18px "Raleway";
@@ -200,8 +215,9 @@ footer{
             <div class="font1 home-font">HELLO!</div>
             <div class="font2 home-font">WE ARE SQUARE</div>
             <div class="home-details">
-                <h3 class="font-title">ABOUT US</h3>
+                <h3 class="font-title-about">ABOUT US</h3>
                 <p class="font-p">constructing......</p>
+                <Button type="primary" shape="circle" class="detail-button font-p">READ MORE</Button>
             </div>
         </div>
         </div>
@@ -248,6 +264,7 @@ footer{
         <div class="group-wrapper publication-back" id="publication">
         <div class="group group-publication">
         <Row class="title-b font-title">Publication</Row>
+        <Row class="title-b font-subtitle">subtitle...</Row>
         <ul class="publication-list font-p">
             <li>aaa</li>
             <li>bbb</li>
@@ -258,6 +275,7 @@ footer{
         <div class="group-wrapper project-back" id="project">
         <div class="group group-project">
         <Row class="title-a font-title">Project</Row>
+        <Row class="title-a font-subtitle">subtitle...</Row>
         <Carousel autoplay loop class="project-carousel">
         <CarouselItem>
             <div class="demo-carousel">1</div>
@@ -277,9 +295,7 @@ footer{
         <div class="group-wrapper" id="contact">
         <div class="group contact-font">
         <Row class="title-a font-title">Contact Us</Row>
-        <h4>name</h4>
-        <p>sub-title</p>
-        <p>abstract</p>
+        <Row class="title-a font-subtitle">subtitle...</Row>
         <ul>
             <li>address</li>
             <li>tel</li>
@@ -289,7 +305,7 @@ footer{
         </div>
         <div class="group">
         <hr class="hr-footer">
-        <footer>Copyright</footer>
+        <footer>Copyright © 2017 SQUARE, All Rights Reserved</footer>
         </div>
      </div>
 </template>
